@@ -1,0 +1,27 @@
+﻿<Window x:Class="RestPOS.Alterar_Senha"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:k="clr-namespace:RestPOS.Keyboard" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            Icon="/RestPOS;component/Res/icon2.png"    WindowStyle="None"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  WindowStartupLocation="CenterScreen"
+             mc:Ignorable="d" Width="573.248" Height="384.438"  >
+    <Grid Margin="10,0,19.333,0" Height="371" VerticalAlignment="Top">
+
+        <TextBlock HorizontalAlignment="Left" Margin="34,10,0,0" TextWrapping="Wrap" Text="Alterar Senha" FontWeight="SemiBold" FontSize="14" VerticalAlignment="Top"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="112,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Usu"/><Run Text="á"/><Run Text="rio:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="114,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Repetir "/><Run Text="Senha:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="114,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Senha"/></TextBlock>
+
+        <TextBox Name="txtNameUser"  k:TouchScreenKeyboard.TouchScreenKeyboard="false"   HorizontalAlignment="Left" Height="36" Margin="112,68,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="305" IsEnabled="False" />
+        <PasswordBox Name="txtNovaSenha"  k:TouchScreenKeyboard.TouchScreenKeyboard="false"   HorizontalAlignment="Left" Height="36" Margin="112,141,0,0"    VerticalAlignment="Top" Width="305" ToolTip="Insert Password" />
+        <PasswordBox Name="txtConfirmaSenha"  k:TouchScreenKeyboard.TouchScreenKeyboard="false"   HorizontalAlignment="Left" Height="36" Margin="114,210,0,0"   VerticalAlignment="Top" Width="305" ToolTip="Insert Password" />
+
+        <Button Name="btnalterar" Content="Salvar" IsDefault="True" HorizontalAlignment="Left" Margin="34,312,0,0" VerticalAlignment="Top" Width="200" Click="btnAlterar_Click" Height="36"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left"  Margin="318,312,0,0" VerticalAlignment="Top"    Width="200" Height="32" FontSize="15" FontWeight="Bold" Foreground="Aqua"  BorderThickness="0"  Background="#FFE65333" Click="btnCancelar_Click"  />
+
+
+
+    </Grid>
+</Window>

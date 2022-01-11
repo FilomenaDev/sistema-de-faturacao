@@ -1,0 +1,73 @@
+Application changes
+	-Vs 3.2  29 March 2018
+	*ADD NEW - MySQL Database - now Working with SQlite and MySQL Database
+	*MySQL configuration Documentation doc file with video tutorial
+	*MySQL DataAccess
+	
+	-Vs 3.1  26 Feb 2018
+	*ADD NEW - Hold order and print kitchen ticket 
+	*ADD NEW - Resume hold order - SalesRegister 
+	*UPDATE - Display Table is Booked or Free 
+	*UPDATE - Add New button into Kitchen Display to open New window for multiple monitor 
+	
+	-Vs 3.0  23 Jan 2018
+	*ADD - Currency symbol into receipt print page
+	*ADD - Multi language World major 20 speaking languages included  
+	*User can add Unlimited language and convert to his native language
+	*How to add Language resource file - Documentation 
+	
+	-Vs 2.2  16 Dec 2017
+	*NEW - SalesRegister first select Table zone 
+	*UPDATE - OLD SalesRegister with table back color
+	*ADD - Custom table zone color.
+	*ADD - User can select Sales Register style
+	
+	-Vs 2.1  13 Dec 2017
+	*UPDATE - Sauce option, Options wise background color
+	*UPDATE - Table order - admin can set table zone
+
+	-Vs 2.0  03 Nov 2017
+	*Add - Sauce option into SalesRegister
+	*Add - Table layout, can select table no in order time
+	*Update - User can add item after press payment 
+	*Update - SalesResiter style changes.
+	*Add - Direct sale, Back button to terminal
+	*Add - Terminal and payment tab into SalesRegister
+	*Add - Customer token number - SalesRegister, Receipt, KD 
+	*Add - Display logo on Receipt
+	*Add - Admin can upload logo and change anytime 
+
+	-Vs 1.1 06 Sep 2017
+	*Initial Release 
+
+
+Table changes
+	-Vs 3.2  29 March 2018
+	*MySQL Database Script
+	
+	-Vs 3.1  26 Feb 2018 
+	*Add New table tbl_hold_sales_item
+	*ALTER table tbl_tablezone  - new column ordertime
+	
+	-Vs 3.0  23 Jan 2018 
+	*ALTER table tbl_terminallocation  - new column  languagecode , currencysign 
+	
+	-Vs 2.2  16 Dec 2017
+	*ALTER table usermgt - new column  srstyle
+	*ALTER table tbl_tablezone  - new column fillcolor
+  
+	-Vs 2.1  13 Dec 2017
+	*Alter table tbl_sauceoptions - new column bgcolor  
+	*Alter table tbl_tablezone - new column orderno   
+
+	-Vs 2.0  03 Nov 2017
+	*Add new table tbl_sauceoptions
+	*Add new table tbl_tablezone
+	*Add new column  tokenno  into	sales_payment
+	*Add new table 	tbl_tokenno
+				id
+				sales_id
+				tokenno
+				sales_date
+	*Add new column   imagename into tbl_terminallocation
+				
